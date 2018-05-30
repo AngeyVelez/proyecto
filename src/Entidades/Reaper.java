@@ -26,8 +26,8 @@ public class Reaper extends Nave {
         this.nombre = nombre;
     }
 
-    public Reaper(String nombre, int vida, List<Escudo> escudos, List<Arma> Armas, int x, int y) {
-        super(vida, escudos, Armas, x, y);
+    public Reaper(String nombre, int vida, List<Escudo> escudos, List<Arma> Armas, int x, int y, String ruta) {
+        super(vida, escudos, Armas, x, y, ruta);
         this.nombre = nombre;
     }
     

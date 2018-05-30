@@ -19,8 +19,8 @@ public class Planeta extends Posicion implements ElementosSistemaPlanetario{
         this.recursos = recursos;
     }
 
-    public Planeta(Recursos recursos, int x, int y) {
-        super(x, y);
+    public Planeta(Recursos recursos, int x, int y, String ruta) {
+        super(x, y, ruta);
         this.recursos = recursos;
     }
 

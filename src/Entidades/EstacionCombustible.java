@@ -21,8 +21,8 @@ public class EstacionCombustible extends Posicion implements ElementosSistemaPla
         this.precioSondas = precioSondas;
     }
 
-    public EstacionCombustible(Recursos precioCombustible, Recursos precioSondas, int x, int y) {
-        super(x, y);
+    public EstacionCombustible(Recursos precioCombustible, Recursos precioSondas, int x, int y, String ruta) {
+        super(x, y, ruta);
         this.precioCombustible = precioCombustible;
         this.precioSondas = precioSondas;
     }

@@ -5,6 +5,9 @@
  */
 package Entidades;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *Clase abstracta para manejar las posiciones en la interfaz grafica
  * @author deivid
@@ -12,6 +15,7 @@ package Entidades;
 public abstract class Posicion {
     private int x;
     private int y;
+    private Image icono;
 
     /**
      *Constructor por defecto de la clase abstracta
@@ -23,10 +27,12 @@ public abstract class Posicion {
      *Constructor parametrizado de la clase abstracta
      * @param x
      * @param y
+     * @param ruta
      */
-    public Posicion(int x, int y) {
+    public Posicion(int x, int y, String ruta) {
         this.x = x;
         this.y = y;
+        this.icono = new ImageIcon(getClass().getResource(ruta)).getImage();
     }
     
     /**

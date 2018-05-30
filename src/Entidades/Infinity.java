@@ -41,8 +41,8 @@ public class Infinity extends Nave{
         this.kilometrosPorLitroGasolina = kilometrosPorLitroGasolina;
     }
 
-    public Infinity(Recursos recursos, float capacidadCombustible, float combustible, float capacidadRecursos, int cantidadSondas, float kilometrosPorLitroGasolina, int vida, List<Escudo> escudos, List<Arma> Armas, int x, int y) {
-        super(vida, escudos, Armas, x, y);
+    public Infinity(Recursos recursos, float capacidadCombustible, float combustible, float capacidadRecursos, int cantidadSondas, float kilometrosPorLitroGasolina, int vida, List<Escudo> escudos, List<Arma> Armas, int x, int y, String ruta) {
+        super(vida, escudos, Armas, x, y, ruta);
         this.recursos = recursos;
         this.capacidadCombustible = capacidadCombustible;
         this.combustible = combustible;

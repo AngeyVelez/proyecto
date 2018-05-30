@@ -8,8 +8,9 @@ package GUI;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
-import sun.awt.RepaintArea;
 
 /**
  *
@@ -49,10 +50,14 @@ public class ViaLactea extends javax.swing.JFrame implements Runnable{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(750, 450));
         setMinimumSize(new java.awt.Dimension(750, 450));
         getContentPane().setLayout(null);
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 750, 450);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -96,10 +101,16 @@ public class ViaLactea extends javax.swing.JFrame implements Runnable{
 
     @Override
     public void run() {
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(ViaLactea.class.getName()).log(Level.SEVERE, null, ex);
+        }
         repaint();
         
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

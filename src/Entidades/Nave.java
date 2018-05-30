@@ -25,8 +25,8 @@ public class Nave extends Posicion{
         this.Armas = Armas;
     }
 
-    public Nave(int vida, List<Escudo> escudos, List<Arma> Armas, int x, int y) {
-        super(x, y);
+    public Nave(int vida, List<Escudo> escudos, List<Arma> Armas, int x, int y, String ruta) {
+        super(x, y, ruta);
         this.vida = vida;
         this.escudos = escudos;
         this.Armas = Armas;
